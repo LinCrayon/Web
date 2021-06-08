@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>脚本结构基础</title>
+    <script language = "javascript">
+      function showHello(){
+        var count=document.myform.txtcount.value;
+        for ( i = 0; i <  count; i++)
+          document.write("<h2>HellOWorld</h2>");
+      }
+    </script>
+</head>
+<body>
+  <form name = "myform" method="post" action="">
+    <p>输入HelloWorld的次数：
+    <input name="txtcount" type="text" id="txtcount">
+    </p>
+    <P><input type="submit" name="submit" value="显示HelloWorld" onclick="showHello()"></P>
+  </form>
+</body>
+</html>
